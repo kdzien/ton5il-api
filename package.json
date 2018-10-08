@@ -1,0 +1,28 @@
+{
+  "name": "tonsil-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./src/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "author": "Konrad Dzień",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "nodemon": "^1.18.4",
+    "typegoose": "^5.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "mongoose": "^5.3.2",
+    "typescript": "^3.1.1"
+  }
+}
