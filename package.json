@@ -14,15 +14,26 @@
   "dependencies": {
     "@types/express": "^4.16.0",
     "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
     "gulp-typescript": "^5.0.0-alpha.3",
     "nodemon": "^1.18.4",
+    "passport": "^0.4.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
     "typegoose": "^5.4.1"
   },
   "devDependencies": {
+    "@types/webpack-env": "^1.13.6",
+    "cheerio": "^1.0.0-rc.2",
+    "crypto": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.2.1",
+    "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.3.2",
+    "passport-local": "^1.0.0",
+    "reuqest": "^2.81.1",
     "typescript": "^3.1.1"
   }
 }

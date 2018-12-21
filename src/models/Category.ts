@@ -7,10 +7,14 @@ class Category extends Typegoose {
   name: string;
 
   @staticMethod
-  static getAllCategories(this: ModelType<Category> & typeof Category) {
+  static getCategories(this: ModelType<Category> & typeof Category) {
     return this.find();
+  }
+  @staticMethod
+  static getCategory(this: ModelType<Category> & typeof Category, category_id: string) {
+    return this.findOne({_id:category_id});
   }
 }
 const CategoryModel = new Category().getModelForClass(Category);
 
-export { CategoryModel }
+export { Category, CategoryModel }
